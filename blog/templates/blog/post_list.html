@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+{% for post in posts %}
+<div>
+	<h2>{{ post.title }}</h2>
+	<div><p>{{ post.text|linebreaksbr }}</p></div>
+	<div>дата создания: {{ post.published_date }}</div>
+	<div>дата публикации: {{ post.published_date }}</div>
+</div>
+{% endfor %}
+	
+</body>
+</html>
